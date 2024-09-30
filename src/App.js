@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import StarRating from './StarRating';
 import "./App.css"
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";

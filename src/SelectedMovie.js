@@ -2,7 +2,9 @@ import { useEffect, useState } from "react"
 import Loader from "./Loader"
 import StarRating from "./StarRating"
 
-function SelectedMovie({selectedId,handleCloseMovie,handleAddWatched,watched,key}){
+const key="f84fc31d"
+
+function SelectedMovie({selectedId,handleCloseMovie,handleAddWatched,watched}){
     const [movie,setMovie]=useState({})
     const[isLoading,setIsLoading]=useState(false)
     const[userRating,setUserRating]=useState("")
@@ -48,7 +50,7 @@ function SelectedMovie({selectedId,handleCloseMovie,handleAddWatched,watched,key
         setMovie(data)
         setIsLoading(false)
       }
-      getMovieDetails()
+      getMovieDetails();
     },[selectedId])
   
     useEffect(function(){
