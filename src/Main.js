@@ -1,9 +1,5 @@
-function Main({children}){
-    return(
-        <main className="main-card">
-            {children}
-      </main>
-    )
+function Main({ children }) {
+  return <main className="main-card">{children}</main>;
 }
 
-export default Main
+export default Main;

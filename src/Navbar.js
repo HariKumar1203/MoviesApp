@@ -1,11 +1,11 @@
-import Logo from "./Logo"
+import Logo from "./Logo";
 
-function Navbar({children}){
-    return(
-        <nav className="navbar">
-            <Logo/>
-        {children}
-      </nav>
-    )
+function Navbar({ children }) {
+  return (
+    <nav className="navbar">
+      <Logo />
+      {children}
+    </nav>
+  );
 }
-export default Navbar
+export default Navbar;
